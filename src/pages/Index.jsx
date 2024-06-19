@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Box, Heading, Text, VStack, HStack, Avatar, SimpleGrid, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure } from "@chakra-ui/react";
+import CodeEditor from '../components/CodeEditor';
 
 const Index = () => {
   const [enrolledCourses, setEnrolledCourses] = useState([]);
@@ -85,6 +86,12 @@ const Index = () => {
               <Text mt={4} fontWeight="bold">- Lisa White</Text>
             </Box>
           </SimpleGrid>
+        </Box>
+
+        {/* Code Editor Section */}
+        <Box>
+          <Heading as="h2" size="xl" mb={6} textAlign="center">Code Editor</Heading>
+          <CodeEditor />
         </Box>
       </VStack>
 
